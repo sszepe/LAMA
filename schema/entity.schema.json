@@ -1,0 +1,126 @@
+{
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "description": "ID of the Entity."
+    },
+    "type": {
+      "enum": [
+        "AnySound",
+        "BroadcastSeries",
+        "Broadcaster",
+        "Collection",
+        "CollectiveIdentity",
+        "CreativeWork",
+        "Event",
+        "EventSeries",
+        "FictionalCharacter",
+        "Genre",
+        "Group",
+        "LieuDeMemoire",
+        "Location",
+        "Movement",
+        "Organization",
+        "Person",
+        "PieceOfMusic",
+        "Place",
+        "Platform",
+        "ProductionTechniquePicture",
+        "ProductionTechniqueSound",
+        "Repertoire",
+        "Shot",
+        "Station",
+        "Thing",
+        "TimePeriod",
+        "Topic",
+        "Topos",
+        "VActivity",
+        "VAdjective",
+        "VClipContributorRole",
+        "VFunctionInClipRole",
+        "VClipType",
+        "VEventType",
+        "VInstrument",
+        "VLanguage",
+        "VMusicArts",
+        "VMusicPerformanceRole",
+        "VSpeechGenre"
+      ],
+      "description": "The Entity's type."
+    },
+    "label": {
+      "type": "string",
+      "description": "Primary label."
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description that ideally makes it clear what the Entity is referring to."
+    },
+    "authorityURIs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Authority URIs, preferably GND, Wikidata, or MusicBrainz (for music)."
+    },
+    "analysisCategories": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "AAbstractOther",
+          "AAesthetics",
+          "ACulturalPractice",
+          "AEconomy",
+          "AGender",
+          "AIdentity",
+          "AMedia",
+          "AMemory",
+          "APastPresentFuture",
+          "APolitics",
+          "ASciencesHumanities"
+        ]
+      },
+      "description": "Analysis-categories assigned to the Entity."
+    },
+    "attributes": {
+      "type": "object",
+      "properties": {
+        "composer": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lyricist": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "description": "Experimental attributes imported from authority data (Entity-IDs)."
+    },
+    "created": {
+      "$ref": "https://tellingsounds.com/lama/common.schema.json#/definitions/timestamp",
+      "description": "Timestamp of the Entity's creation in the system, in ISO8601 format."
+    },
+    "createdBy": {
+      "type": "string",
+      "description": "Username of the user who created the Entity in the system."
+    },
+    "updated": {
+      "$ref": "https://tellingsounds.com/lama/common.schema.json#/definitions/timestamp",
+      "description": "Timestamp of the Entity's last update in the system, in ISO8601 format."
+    },
+    "updatedBy": {
+      "type": "string",
+      "description": "Username of the user who last updated the Entity in the system."
+    }
+  },
+  "required": ["_id", "type", "label", "description", "authorityURIs"],
+  "additionalProperties": false,
+  "$id": "https://tellingsounds.com/lama/entity.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

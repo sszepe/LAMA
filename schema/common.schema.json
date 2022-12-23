@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tellingsounds.com/lama/common.schema.json",
+  "definitions": {
+    "timestamp": {
+      "type": "string",
+      "pattern": "[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]{6})?\\+00:00$",
+      "description": "Loosely matches an ISO8601 timestamp (milliseconds optional), with timezone information."
+    }
+  }
+}

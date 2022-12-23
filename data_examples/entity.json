@@ -1,0 +1,13 @@
+{
+  "_id": "_Person_wolfgang-ambros",
+  "type": "Person",
+  "label": "Wolfgang Ambros",
+  "description": "Austrian singer, guitar player and composer, widely seen as one main protagonist of \"Austropop\".",
+  "authorityURIs": ["http://d-nb.info/gnd/118839292"],
+  "created": "2020-11-30T13:25:19.153931+00:00",
+  "createdBy": "bmichlmayr",
+  "additionalTags": [],
+  "updated": "2021-07-01T14:04:58.898293+00:00",
+  "updatedBy": "bmichlmayr",
+  "usageCount": 53
+}

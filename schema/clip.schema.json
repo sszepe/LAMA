@@ -1,0 +1,112 @@
+{
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "description": "Clip ID."
+    },
+    "type": {
+      "const": "Clip",
+      "description": "Always \"Clip\"."
+    },
+    "effectiveId": {
+      "type": "string",
+      "description": "Derived ID used for deduplication purposes."
+    },
+    "title": {
+      "type": "string",
+      "description": "The Clip's title, as it appears on the source website."
+    },
+    "label": {
+      "type": "string",
+      "description": "Optional user-defined label, in case the original title is too long or unclear."
+    },
+    "subtitle": {
+      "type": "string",
+      "description": "The Clip's subtitle, if applicable."
+    },
+    "url": {
+      "type": "string",
+      "description": "The URL (preferably permalink) of the website where the Clip can be found."
+    },
+    "platform": {
+      "type": "string",
+      "description": "The ID of the platform-Entity (like \"Mediathek\" or \"YouTube\") associated with the Clip."
+    },
+    "collections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs of (user-defined) collection-Entities the Clip belongs to."
+    },
+    "fileType": {
+      "enum": ["a", "v"],
+      "description": "Whether the Clip is an audio or video file."
+    },
+    "duration": {
+      "type": "integer",
+      "description": "Duration of the Clip in seconds."
+    },
+    "shelfmark": {
+      "type": "string",
+      "description": "Shelfmark (\"Signatur\") of the Clip, if applicable."
+    },
+    "language": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs of language-Entities that apply to the Clip."
+    },
+    "clipType": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs of ClipType-Entities that best describe the Clip (for example: \"Interview\")."
+    },
+    "description": {
+      "type": "string",
+      "description": "Free-form description, either copied from the source or user-provided."
+    },
+    "created": {
+      "$ref": "https://tellingsounds.com/lama/common.schema.json#/definitions/timestamp",
+      "description": "Timestamp of the Clips's creation in the system, in ISO8601 format."
+    },
+    "createdBy": {
+      "type": "string",
+      "description": "Username of the user who created the Clip in the system."
+    },
+    "updated": {
+      "$ref": "https://tellingsounds.com/lama/common.schema.json#/definitions/timestamp",
+      "description": "Timestamp of the Clips's last update in the system, in ISO8601 format."
+    },
+    "updatedBy": {
+      "type": "string",
+      "description": "Username of the user who last updated the Clip in the system."
+    },
+    "updatedAny": {
+      "type": "string",
+      "description": "Timestamp of last update of the Clip or any of its Annotations, in ISO8601 format."
+    },
+    "updatedAnyBy": {
+      "type": "string",
+      "description": "Username of the user who last updated the Clip or any of its Annotations."
+    }
+  },
+  "required": [
+    "_id",
+    "type",
+    "title",
+    "url",
+    "platform",
+    "fileType",
+    "duration",
+    "language",
+    "clipType"
+  ],
+  "additionalProperties": false,
+  "$id": "https://tellingsounds.com/lama/clip.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

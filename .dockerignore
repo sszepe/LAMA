@@ -1,0 +1,6 @@
+frontend/node_modules/
+dumps/
+.git/
+.venv/
+*.db
+*.bak

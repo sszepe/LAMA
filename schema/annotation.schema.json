@@ -1,0 +1,133 @@
+{
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "description": "Annotation ID."
+    },
+    "type": {
+      "const": "Annotation",
+      "description": "Always \"Annotation\"."
+    },
+    "clip": {
+      "type": "string",
+      "description": "ID of the Clip the Annotation belongs to."
+    },
+    "element": {
+      "type": "string",
+      "description": "ID of the associated Element, if applicable."
+    },
+    "relation": {
+      "enum": [
+        "RBroadcastDate",
+        "RBroadcastSeries",
+        "RContributor",
+        "RDateOfCreation",
+        "RInstrument",
+        "RKeyword",
+        "RLyricsQuote",
+        "RTextQuote",
+        "RMentions",
+        "RMusicalQuote",
+        "RPerformanceDate",
+        "RPerformer",
+        "RPieceOfMusic",
+        "RProductionTechniquePicture",
+        "RProductionTechniqueSound",
+        "RQuote",
+        "RRecordingDate",
+        "RReminiscentOfMusic",
+        "RReminiscentOfNoise",
+        "RReminiscentOfPicture",
+        "RReminiscentOfSpeech",
+        "RShot",
+        "RShows",
+        "RSoundAdjective",
+        "RSoundsLike",
+        "RSoundsLikeNoise",
+        "RSpeaker",
+        "RSpeechDescriptionText"
+      ],
+      "description": "The Relation expressed by the Annotation."
+    },
+    "target": {
+      "type": "string",
+      "description": "ID of the entity being annotated or of the person associated with a quote."
+    },
+    "quotes": {
+      "type": "string",
+      "description": "The text of a quote, if applicable."
+    },
+    "date": {
+      "type": "string",
+      "description": "The date being annotated, in EDTF (level 1) format."
+    },
+    "role": {
+      "type": "string",
+      "description": "ID of role-Entity (of type VClipContributorRole, VFunctionInClipRole, or VMusicPerformanceRole), if applicable."
+    },
+    "metaDate": {
+      "type": "string",
+      "description": "Supplementary date information, for example the year the annotated person was photographed or recorded, in EDTF (level 1) format."
+    },
+    "timecodeStart": {
+      "type": "integer",
+      "description": "Starting timecode of Annotation, in seconds from the beginning of the clip."
+    },
+    "timecodeEnd": {
+      "type": "integer",
+      "description": "Ending timecode of Annotation, in seconds from the beginning of the clip."
+    },
+    "confidence": {
+      "enum": ["certain", "maybe", "unsure"],
+      "description": "Supplementary information about how confident the annotator is about the accuracy of the annotated information."
+    },
+    "attribution": {
+      "type": "string",
+      "description": "Supplementary information about the origin of the Annotation's contents, for example a bibliographic reference."
+    },
+    "comment": {
+      "type": "string",
+      "description": "Free-form comment, that will be shown in the UI."
+    },
+    "interpretative": {
+      "type": "boolean",
+      "description": "Whether the Annotation describes something which is explicitly shown or mentioned, or something that is not present explicitly, but nevertheless inferred by the annotator."
+    },
+    "constitutedBy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs of other Annotations (on the same Clip) which support the interpretative Annotation."
+    },
+    "notablyAbsent": {
+      "type": "boolean",
+      "description": "Whether the Annotation is about something that would be expected to be present, but isn't."
+    },
+    "refersTo": {
+      "type": "string",
+      "description": "ID of another Annotation (on the same Clip) that the current Annotation applies to."
+    },
+    "created": {
+      "$ref": "https://tellingsounds.com/lama/common.schema.json#/definitions/timestamp",
+      "description": "Timestamp of the Annotation's creation, in ISO8601 format."
+    },
+    "createdBy": {
+      "type": "string",
+      "description": "Username of the user who created the Annotation."
+    },
+    "updated": {
+      "$ref": "https://tellingsounds.com/lama/common.schema.json#/definitions/timestamp",
+      "description": "Timestamp of the Annotation's last update, in ISO8601 format."
+    },
+    "updatedBy": {
+      "type": "string",
+      "description": "Username of the user who last updated the Annotation."
+    }
+  },
+  "required": ["_id", "type", "clip", "relation", "created", "createdBy"],
+  "additionalProperties": false,
+  "$id": "https://tellingsounds.com/lama/annotation.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

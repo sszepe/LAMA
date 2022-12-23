@@ -1,0 +1,771 @@
+[
+  {
+    "_id": "_Lang_de",
+    "type": "Language",
+    "label": "German",
+    "description": "Die deutsche Sprache.",
+    "authorityURIs": ["https://de.wikipedia.org/wiki/Deutsche_Sprache"]
+  },
+  {
+    "_id": "_Lang_en",
+    "type": "Language",
+    "label": "English",
+    "description": "The english language.",
+    "authorityURIs": ["https://en.wikipedia.org/wiki/English_language"]
+  },
+  {
+    "_id": "_Topos_MusikstadtWien",
+    "type": "Topos",
+    "label": "Topos 'Musikstadt Wien'",
+    "containsKeyword": ["_Place_Vienna"],
+    "description": "Die Musikstadt Wien ist schon ein alter Topos.",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Gedaechtnisort_Beethoven",
+    "type": "Gedaechtnisort",
+    "label": "Gedächtnisort Beethoven",
+    "description": "Beethoven-Kult.",
+    "containsKeyword": ["_Person_LudwigVanBeethoven"],
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Event_BeethovenAusstellungDerStadtWien1970",
+    "type": "Event",
+    "eventType": "_EventType_Ausstellung",
+    "containsKeyword": ["_Person_LudwigVanBeethoven", "_Topic_Jubilaeum"],
+    "dateStart": "1970-03",
+    "dateEnd": "1970-09",
+    "label": "Beethoven-Ausstellung der Stadt Wien'",
+    "description": "Beethoven-Ausstellung der Stadt Wien im Jahr 1970.",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_EventType_Ausstellung",
+    "type": "EventType",
+    "label": "Ausstellung",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_Jubilaeum",
+    "type": "Topic",
+    "label": "Jubiläum",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Place_GoldenerSaal",
+    "type": "Place",
+    "label": "Goldener Saal",
+    "insidePlace": "_Place_Vienna",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_BSeries_Mittagsjournal",
+    "type": "BroadcastSeries",
+    "label": "Mittagsjournal (Ö1)",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_ClipType_CultureProgram",
+    "type": "VocabClipType",
+    "label": "CultureProgram",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_ClipType_Documentary",
+    "type": "VocabClipType",
+    "label": "Documentary",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_ClipType_Extract",
+    "type": "VocabClipType",
+    "label": "Extract",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_ClipType_News",
+    "type": "VocabClipType",
+    "label": "News",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_ClipType_Wochenschau",
+    "type": "VocabClipType",
+    "label": "Wochenschau",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Group_GlennMillerOrchestra",
+    "type": "Group",
+    "assosciatedPersons": ["_Person_GlennMiller"],
+    "label": "Glenn Miller Orchestra",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Group_TheBeatles",
+    "type": "Group",
+    "assosciatedPersons": [
+      "_Person_GeorgeHarrison",
+      "_Person_RingoStarr",
+      "_Person_PaulMcCartney",
+      "_Person_JohnLennon"
+    ],
+    "label": "The Beatles",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_ContributorRole_Speaker",
+    "type": "ContributorRole",
+    "label": "Speaker",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Group_WienerPhilharmoniker",
+    "type": "Group",
+    "label": "Wiener Philharmoniker",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_PerformerRole_Conductor",
+    "type": "PerformerRole",
+    "label": "Conductor",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_PerformerRole_Leader",
+    "type": "PerformerRole",
+    "label": "Leader",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_PerformerRole_Soloist",
+    "type": "PerformerRole",
+    "label": "Soloist",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Platform_FilmarchivAustria",
+    "type": "Platform",
+    "label": "Filmarchiv Austria",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Broadcaster_ORF",
+    "type": "Broadcaster",
+    "label": "ORF",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_Anonymous_442C28F8-D396-4F74-8312-FC5727289F38",
+    "type": "Person",
+    "label": "Anonymous 1",
+    "gender": "_Gender_Female",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_Anonymous_54493401-647d-485b-9de6-4a3782ac0b70",
+    "type": "Person",
+    "label": "Anonymous 2",
+    "gender": "_Gender_Male",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_Anonymous_739BF7D5-37FD-4941-94F3-CA763C8D9DA8",
+    "type": "Person",
+    "label": "Anonymous 3",
+    "gender": "_Gender_Male",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_Anonymous_D2106E28-729F-4448-86BD-E1291E17BD3F",
+    "type": "Person",
+    "label": "Anonymous 4",
+    "gender": "_Gender_Male",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_ElisabethFurtwaengler",
+    "type": "Person",
+    "label": "Elisabeth Furtwängler",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_FredKPrieberg",
+    "type": "Person",
+    "label": "Fred K. Prieberg",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_GeorgeHarrison",
+    "type": "Person",
+    "label": "George Harrison",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_GlennMiller",
+    "type": "Person",
+    "label": "Glenn Miller",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_IlseOberhofer",
+    "type": "Person",
+    "label": "Ilse Oberhofer",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_JohnLennon",
+    "type": "Person",
+    "label": "John Lennon",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_LeonardBernstein",
+    "type": "Person",
+    "label": "Leonard Bernstein",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_LudwigVanBeethoven",
+    "type": "Person",
+    "label": "Ludwig van Beethoven",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_LuisGlueck",
+    "type": "Person",
+    "label": "Luis Glück",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_MarcelPrawy",
+    "type": "Person",
+    "label": "Marcel Prawy",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_PaulMcCartney",
+    "type": "Person",
+    "label": "Paul McCartney",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_RingoStarr",
+    "type": "Person",
+    "label": "Ringo Starr",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_RobertGokl",
+    "type": "Person",
+    "label": "Robert Gokl",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_ThomasAsanger",
+    "type": "Person",
+    "label": "Thomas Asanger",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_UdoBachmair",
+    "type": "Person",
+    "label": "Udo Bachmair",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_WalterGellert",
+    "type": "Person",
+    "label": "Walter Gellert",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_WilhelmFurtwaengler",
+    "type": "Person",
+    "label": "Wilhelm Furtwängler",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_WilliamChristopherHandy",
+    "type": "Person",
+    "label": "William Christopher Handy",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_WolfgangAMozart",
+    "type": "Person",
+    "label": "Wolfgang Amadeus Mozart",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_PieceOfMusic_Beethoven8",
+    "type": "PieceOfMusic",
+    "authorityURI": ["https://www.wikidata.org/wiki/Q270785"],
+    "containsKeyword": ["_Topic_CrazyYouth"],
+    "creator": "_Person_LudwigVanBeethoven",
+    "label": "Symphony No. 8",
+    "published": "1812",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_PieceOfMusic_BeethovenOp15",
+    "type": "PieceOfMusic",
+    "authorityURI": [
+      "https://en.wikipedia.org/wiki/Piano_Concerto_No._1_(Beethoven)"
+    ],
+    "creator": ["_Person_LudwigVanBeethoven"],
+    "label": "Symphony No. 8",
+    "published": ["1800", "1795"],
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_PieceOfMusic_SomeKindOfJazzPiece",
+    "type": "PieceOfMusic",
+    "label": "Some Kind Of Jazz Piece",
+    "published": ["1961"],
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_PieceOfMusic_SovietNationalAnthem",
+    "type": "PieceOfMusic",
+    "authorityURI": [
+      "https://en.wikipedia.org/wiki/State_Anthem_of_the_Soviet_Union"
+    ],
+    "containsKeyword": ["_Topic_SovietUnion"],
+    "label": "State Anthem of the Soviet Union",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_PieceOfMusic_StLouisBluesHandy",
+    "type": "PieceOfMusic",
+    "authorityURI": ["https://en.wikipedia.org/wiki/Saint_Louis_Blues_(song)"],
+    "creator": ["_Person_WilliamChristopherHandy"],
+    "label": "St. Louis Blues, as attributed to W.C. Handy",
+    "published": ["1914"],
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_PieceOfMusic_StLouisBluesMarchArrGM",
+    "type": "PieceOfMusic",
+    "authorityURI": [
+      "https://www.discogs.com/Glenn-Miller-And-His-Orchestra-St-Louis-Blues-March-American-Patrol/release/5842200"
+    ],
+    "creator": ["_Person_GlennMiller"],
+    "derivedFrom": "_PieceOfMusic_StLouisBluesHandy",
+    "label": "St. Louis Blues March (Arrangement by Glenn Miller)",
+    "published": ["1945"],
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Place_Austria",
+    "type": "Place",
+    "authorityURI": ["https://en.wikipedia.org/wiki/Austria"],
+    "label": "Austria",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Place_HofburgVienna",
+    "type": "Place",
+    "authorityURI": ["https://en.wikipedia.org/wiki/Hofburg"],
+    "insidePlace": "_Place_Vienna",
+    "label": "Hofburg (Wien)",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Place_Salzburg",
+    "type": "Place",
+    "insidePlace": "_Place_Austria",
+    "label": "Salzburg",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Place_Vienna",
+    "type": "Place",
+    "authorityURI": ["https://en.wikipedia.org/wiki/Vienna"],
+    "insidePlace": "_Place_Austria",
+    "label": "Wien",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Platform_Mediathek",
+    "type": "Platform",
+    "label": "Österreichische Mediathek",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Platform_ORFArchiv",
+    "type": "Platform",
+    "label": "ORF Archiv",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Repertoire_BrassMusic",
+    "type": "Repertoire",
+    "label": "Brass Music",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Repertoire_ClassicalRomantical",
+    "type": "Repertoire",
+    "label": "Classical Romantical",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Repertoire_Jazz",
+    "type": "Repertoire",
+    "label": "Jazz",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Repertoire_MilitaryMusic",
+    "type": "Repertoire",
+    "label": "Military Music",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Repertoire_PopMusic",
+    "type": "Repertoire",
+    "label": "Pop Music",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Repertoire_PopRockMusic",
+    "type": "Repertoire",
+    "label": "Pop rock Music",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Role_Archive",
+    "type": "Role",
+    "label": "Archive",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Role_Director",
+    "type": "Role",
+    "label": "Director",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Role_Presenter",
+    "type": "Role",
+    "label": "Presenter",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Role_Producer",
+    "type": "Role",
+    "label": "Producer",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_SoundO_Background",
+    "type": "SoundOrigin",
+    "label": "Background",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_SoundO_Diegetic",
+    "type": "SoundOrigin",
+    "label": "Diegetic",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_SoundO_Foreground",
+    "type": "SoundOrigin",
+    "label": "Foreground",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_SoundO_NonDiegetic",
+    "type": "SoundOrigin",
+    "label": "Non-Diegetic",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_SpeechGenre_Interview",
+    "type": "SpeechGenre",
+    "label": "Interview",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_SpeechGenre_Narration",
+    "type": "SpeechGenre",
+    "label": "Narration",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_SpeechGenre_Recording",
+    "type": "SpeechGenre",
+    "label": "Recording",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_SpeechGenre_Statement",
+    "type": "SpeechGenre",
+    "label": "Statement",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Station_OE1",
+    "type": "Station",
+    "label": "Ö1 (Radiosender)",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Station_ORF2",
+    "type": "Station",
+    "label": "ORF2 (Fernsehsender)",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_TVSeries_Oesterreich_in_Farbe_Besatzungszeit",
+    "type": "BroadcastSeries",
+    "label": "Österreich in Farbe – Besatzungszeit in Österreich",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_TVSeries_Phil_Probe_Konzert",
+    "type": "BroadcastSeries",
+    "label": "Die Philharmoniker in Probe und Konzert",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_ThingExistingInTheWorld_Piano",
+    "type": "ThingExistingInTheWorld",
+    "label": "Piano",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_ThingExistingInTheWorld_Soldiers",
+    "type": "ThingExistingInTheWorld",
+    "label": "Soldiers",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_ThingExistingInTheWorld_SovietFlag",
+    "type": "ThingExistingInTheWorld",
+    "authorityURI": ["https://en.wikipedia.org/wiki/Flag_of_the_Soviet_Union"],
+    "containsKeyword": ["_Topic_SovietUnion"],
+    "label": "Flag of the Soviet Union",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_ThingExistingInTheWorld_Cigarette",
+    "type": "Topic",
+    "label": "Cigarette",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_AlliedOccupiedAustria",
+    "type": "Topic",
+    "authorityURI": ["https://en.wikipedia.org/wiki/Allied-occupied_Austria"],
+    "containsKeyword": ["_Place_Austria"],
+    "label": "Allied-occupied Austria",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_Americanization",
+    "type": "Topic",
+    "label": "Americanization",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_Anniversary",
+    "type": "Topic",
+    "label": "Anniversary",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_Art",
+    "type": "Topic",
+    "label": "Art",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_AustrianStateTreaty",
+    "type": "Topic",
+    "authorityURI": ["https://en.wikipedia.org/wiki/Austrian_State_Treaty"],
+    "containsKeyword": ["_Place_Austria"],
+    "label": "Austrian State Treaty",
+    "year": "1955",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_Biography",
+    "type": "Topic",
+    "label": "Biography",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_CrazyYouth",
+    "type": "Topic",
+    "containsKeyword": ["_Topic_YoungPeople"],
+    "label": "Crazy Youth",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_ExcitedTeenagers",
+    "type": "Topic",
+    "label": "Excited Teenagers",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_Heldenverehrung",
+    "type": "Topic",
+    "label": "Heldenverehrung",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_LiveConcert",
+    "type": "Topic",
+    "label": "Live Concert",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_Love",
+    "type": "Topic",
+    "label": "Love",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_Music",
+    "type": "Topic",
+    "label": "Music",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_MusicalDirections",
+    "type": "Topic",
+    "label": "Musical Directions",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_Rehersal",
+    "type": "Topic",
+    "label": "Rehersal",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_Screaming",
+    "type": "Topic",
+    "label": "Screaming",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_SovietUnion",
+    "type": "Topic",
+    "label": "Soviet Union",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_YoungPeople",
+    "type": "Topic",
+    "label": "Young People",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Wochenschau_Austria_Wochenschau_19_Maerz_1965",
+    "type": "BroadcastSeries",
+    "label": "Austria Wochenschau, 19. März 1965",
+    "description": "",
+    "authorityURIs": []
+  }
+]

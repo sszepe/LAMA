@@ -1,0 +1,87 @@
+{
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "description": "Segment ID."
+    },
+    "type": {
+      "const": "Segment",
+      "description": "Always \"Segment\"."
+    },
+    "clip": {
+      "type": "string",
+      "description": "ID of the Clip the Segment belongs to."
+    },
+    "label": {
+      "type": "string",
+      "description": "User-provided label."
+    },
+    "description": {
+      "type": "string",
+      "description": "User-provided description explaining what the Segment is referring to."
+    },
+    "timecodes": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "description": "Pairs of start and end timecodes (in seconds) identifying the relevant parts of the Clip."
+    },
+    "segmentContains": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "added": {
+            "type": "string"
+          },
+          "addedBy": {
+            "type": "string"
+          },
+          "annotation": {
+            "type": "string"
+          }
+        },
+        "required": ["added", "addedBy", "annotation"],
+        "additionalProperties": false
+      },
+      "description": "IDs of Annotations belonging to the Segment, with metadata."
+    },
+    "created": {
+      "$ref": "https://tellingsounds.com/lama/common.schema.json#/definitions/timestamp",
+      "description": "Timestamp of the Segment's creation in the system, in ISO8601 format."
+    },
+    "createdBy": {
+      "type": "string",
+      "description": "Username of the user who created the Segment in the system."
+    },
+    "updated": {
+      "$ref": "https://tellingsounds.com/lama/common.schema.json#/definitions/timestamp",
+      "description": "Timestamp of the Segment's last update in the system, in ISO8601 format."
+    },
+    "updatedBy": {
+      "type": "string",
+      "description": "Username of the user who last updated the Segment in the system."
+    }
+  },
+  "required": [
+    "_id",
+    "type",
+    "clip",
+    "label",
+    "description",
+    "timecodes",
+    "segmentContains",
+    "created",
+    "createdBy"
+  ],
+  "additionalProperties": false,
+  "$id": "https://tellingsounds.com/lama/segment.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

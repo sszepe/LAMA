@@ -1,0 +1,66 @@
+{
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "description": "The ID of the Element."
+    },
+    "type": {
+      "enum": ["Music", "Noise", "Picture", "Speech"],
+      "description": "Which aspect/layer/type of phenomenon the Element is about."
+    },
+    "clip": {
+      "type": "string",
+      "description": "ID of the Clip the Element belongs to."
+    },
+    "label": {
+      "type": "string",
+      "description": "User-provided label."
+    },
+    "description": {
+      "type": "string",
+      "description": "User-provided description explaining what the Element is referring to."
+    },
+    "timecodes": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "description": "Pairs of start and end timecodes (in seconds) identifying the relevant parts of the Clip."
+    },
+    "created": {
+      "$ref": "https://tellingsounds.com/lama/common.schema.json#/definitions/timestamp",
+      "description": "Timestamp of the Element's creation in the system, in ISO8601 format."
+    },
+    "createdBy": {
+      "type": "string",
+      "description": "Username of the user who created the Element in the system."
+    },
+    "updated": {
+      "$ref": "https://tellingsounds.com/lama/common.schema.json#/definitions/timestamp",
+      "description": "Timestamp of the Element's last update in the system, in ISO8601 format."
+    },
+    "updatedBy": {
+      "type": "string",
+      "description": "Username of the user who last updated the Element in the system."
+    }
+  },
+  "required": [
+    "_id",
+    "type",
+    "clip",
+    "label",
+    "description",
+    "timecodes",
+    "created",
+    "createdBy"
+  ],
+  "additionalProperties": false,
+  "$id": "https://tellingsounds.com/lama/element.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

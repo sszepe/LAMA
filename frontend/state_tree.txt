@@ -1,0 +1,10 @@
+login
+  username
+  authToken
+sidebar
+  isShelfOpen
+  activeTab (clip/recent/favorites)
+  formStack ("blocked" entry forms; array of IDs?)
+currentClip (constantly updated from server)
+  title (-> header title)
+  ...

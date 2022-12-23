@@ -1,0 +1,283 @@
+[
+  {
+    "_id": "_VLanguage_de",
+    "type": "VLanguage",
+    "label": "German",
+    "description": "Die deutsche Sprache.",
+    "authorityURIs": ["https://de.wikipedia.org/wiki/Deutsche_Sprache"]
+  },
+  {
+    "_id": "_VLanguage_en",
+    "type": "VLanguage",
+    "label": "English",
+    "description": "The english language.",
+    "authorityURIs": ["https://en.wikipedia.org/wiki/English_language"]
+  },
+  {
+    "_id": "_Event_BeethovenAusstellungDerStadtWien1970",
+    "type": "Event",
+    "eventType": "_EventType_Ausstellung",
+    "containsKeyword": ["_Person_LudwigVanBeethoven", "_Topic_Jubilaeum"],
+    "dateStart": "1970-03",
+    "dateEnd": "1970-09",
+    "label": "Beethoven-Ausstellung der Stadt Wien'",
+    "description": "Beethoven-Ausstellung der Stadt Wien im Jahr 1970.",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_VEventType_Ausstellung",
+    "type": "VEventType",
+    "label": "Ausstellung",
+    "description": "Eine Ausstellung (auch Exposition) ist eine dauerhafte oder temporäre öffentliche Präsentation, bei der Ausstellungsobjekte (Exponate) einem Publikum gezeigt werden. ",
+    "authorityURIs": ["https://de.wikipedia.org/wiki/Ausstellung"]
+  },
+  {
+    "_id": "_Topic_Jubilaeum",
+    "type": "Topic",
+    "label": "Jubiläum",
+    "description": "Unter einem Jubiläum (lateinisch annus jubilaeus „Jubeljahr“; Plural: Jubiläen) versteht man eine Erinnerungsfeier bei der Wiederkehr eines besonderen Datums.",
+    "authorityURIs": ["https://de.wikipedia.org/wiki/Jubil%C3%A4um"]
+  },
+  {
+    "_id": "_Place_GoldenerSaal",
+    "type": "Place",
+    "label": "Goldener Saal",
+    "insidePlace": "_Place_Vienna",
+    "description": "'Goldener Saal' ist eine andere Bezeichnung für den großen Saal des Musikvereines in Wien.",
+    "authorityURIs": ["https://www.musikverein.at/der-grosse-musikvereinssaal"]
+  },
+  {
+    "_id": "_BroadcastSeries_Mittagsjournal",
+    "type": "BroadcastSeries",
+    "label": "Mittagsjournal (Ö1)",
+    "description": "Das Mittagsjournal ist eine Informationssendung des österreichischen Radiosenders Ö1. Es entstand 1967 nach dem Rundfunkvolksbegehren und ist somit das älteste der sechs Journalformate in Ö1.",
+    "authorityURIs": ["https://de.wikipedia.org/wiki/Mittagsjournal"]
+  },
+  {
+    "_id": "_VClipType_Informationssendung",
+    "type": "VClipType",
+    "label": "Informationssendung",
+    "description": "Eine Informationssendung ist eine Hörfunk- oder Fernsehsendung, die sich der Informationsvermittlung widmet.",
+    "authorityURIs": ["https://de.wikipedia.org/wiki/Informationssendung"]
+  },
+  {
+    "_id": "_VClipType_Documentary_film",
+    "type": "VClipType",
+    "label": "Documentary film",
+    "description": "A documentary film is a non-fictional motion-picture intended to 'document reality, primarily for the purposes of instruction, education, or maintaining a historical record'",
+    "authorityURIs": ["https://en.wikipedia.org/wiki/Documentary_film"]
+  },
+  {
+    "_id": "_VClipType_Wochenschau",
+    "type": "VClipType",
+    "label": "Wochenschau",
+    "description": "Eine Wochenschau war eine für das Kino wöchentlich neu produzierte Zusammenstellung von Filmberichten über politische, gesellschaftliche, sportliche und kulturelle Ereignisse. ",
+    "authorityURIs": ["https://de.wikipedia.org/wiki/Wochenschau"]
+  },
+  {
+    "_id": "_Group_TheBeatles",
+    "type": "Group",
+    "assosciatedPersons": [
+      "_Person_GeorgeHarrison",
+      "_Person_RingoStarr",
+      "_Person_PaulMcCartney",
+      "_Person_JohnLennon"
+    ],
+    "label": "The Beatles",
+    "description": "The Beatles were an English rock band formed in Liverpool in 1960.",
+    "authorityURIs": ["https://en.wikipedia.org/wiki/The_Beatles"]
+  },
+  {
+    "_id": "_Group_WienerPhilharmoniker",
+    "type": "Group",
+    "label": "Wiener Philharmoniker",
+    "description": "Die Wiener Philharmoniker setzen sich aus Mitgliedern des Wiener Staatsopernorchesters zusammen und gelten als eines der führenden Orchester der Welt.",
+    "authorityURIs": [
+      "https://www.wienerphilharmoniker.at/",
+      "https://en.wikipedia.org/wiki/Vienna_Philharmonic"
+    ]
+  },
+  {
+    "_id": "_VMusicPerformanceRole_Conductor",
+    "type": "VMusicPerformanceRole",
+    "label": "Conductor",
+    "description": "The primary duties of the conductor are to interpret the score in a way which reflects the specific indications in that score, set the tempo, ensure correct entries by ensemble members, and 'shape' the phrasing where appropriate.",
+    "authorityURIs": ["https://en.wikipedia.org/wiki/Conducting"]
+  },
+  {
+    "_id": "_VMusicPerformanceRole_Soloist",
+    "type": "VMusicPerformanceRole",
+    "label": "Soloist",
+    "description": "Performing a solo is 'to solo', and the performer is known as a soloist.",
+    "authorityURIs": ["https://en.wikipedia.org/wiki/Solo_(music)"]
+  },
+  {
+    "_id": "_Platform_FilmarchivAustria",
+    "type": "Platform",
+    "label": "Filmarchiv Austria",
+    "description": "As the custodian of Austria’s audio-visual heritage, the Filmarchiv Austria is the country’s central institution for collecting and documenting film.",
+    "authorityURIs": ["https://www.filmarchiv.at/"]
+  },
+  {
+    "_id": "_Broadcaster_ORF",
+    "type": "Broadcaster",
+    "label": "ORF",
+    "description": "",
+    "authorityURIs": ["https://orf.at/"]
+  },
+  {
+    "_id": "_Person_GeorgeHarrison",
+    "type": "Person",
+    "label": "George Harrison",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_IlseOberhofer",
+    "type": "Person",
+    "label": "Ilse Oberhofer",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_JohnLennon",
+    "type": "Person",
+    "label": "John Lennon",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_LeonardBernstein",
+    "type": "Person",
+    "label": "Leonard Bernstein",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_LudwigVanBeethoven",
+    "type": "Person",
+    "label": "Ludwig van Beethoven",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_PaulMcCartney",
+    "type": "Person",
+    "label": "Paul McCartney",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Person_RingoStarr",
+    "type": "Person",
+    "label": "Ringo Starr",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Place_Austria",
+    "type": "Place",
+    "label": "Austria",
+    "description": "",
+    "authorityURIs": ["https://en.wikipedia.org/wiki/Austria"]
+  },
+  {
+    "_id": "_Place_HofburgVienna",
+    "type": "Place",
+    "label": "Hofburg (Wien)",
+    "description": "",
+    "authorityURIs": ["https://en.wikipedia.org/wiki/Hofburg"]
+  },
+  {
+    "_id": "_Place_Salzburg",
+    "type": "Place",
+    "label": "Salzburg",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Place_Vienna",
+    "type": "Place",
+    "insidePlace": "_Place_Austria",
+    "label": "Wien",
+    "description": "",
+    "authorityURIs": ["https://en.wikipedia.org/wiki/Vienna"]
+  },
+  {
+    "_id": "_Platform_Mediathek",
+    "type": "Platform",
+    "label": "Österreichische Mediathek",
+    "description": "",
+    "authorityURIs": ["https://www.mediathek.at/"]
+  },
+  {
+    "_id": "_VClipContributorRole_Presenter",
+    "type": "VClipContributorRole",
+    "label": "Presenter",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_VClipContributorRole_Producer",
+    "type": "VClipContributorRole",
+    "label": "Producer",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_VSpeechGenre_Interview",
+    "type": "VSpeechGenre",
+    "label": "Interview",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_VSpeechGenre_Narration",
+    "type": "VSpeechGenre",
+    "label": "Narration",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_VStation_OE1",
+    "type": "Station",
+    "label": "Ö1",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_VStation_ORF2",
+    "type": "Station",
+    "label": "ORF2",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Thing_Piano",
+    "type": "Thing",
+    "label": "Piano",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Thing_Cigarette",
+    "type": "Thing",
+    "label": "Cigarette",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_Topic_Americanization",
+    "type": "Topic",
+    "label": "Americanization",
+    "description": "",
+    "authorityURIs": []
+  },
+  {
+    "_id": "_VAdjective_loud",
+    "type": "VAdjective",
+    "label": "loud",
+    "description": "",
+    "authorityURIs": []
+  }
+]
