@@ -6,7 +6,7 @@ bottle-websocket==0.2.9
 contextlib2==0.6.0.post1
 decorator==4.4.2
 dictdiffer==0.8.1
-gevent==21.1.2
+gevent==24.10.1
 gevent-websocket==0.10.1
 greenlet==1.0.0
 iniconfig==1.1.1
@@ -37,7 +37,7 @@ soupsieve==2.2
 toml==0.10.2
 traitlets==5.0.5
 Unidecode==1.2.0
-waitress==1.4.4
+waitress==3.0.1
 wcwidth==0.2.5
 WebOb==1.8.6
 WebTest==2.0.35
